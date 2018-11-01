@@ -1,0 +1,15 @@
+Source: percona-release
+Section: misc
+Priority: optional
+Maintainer: Percona Development Team <info@percona.com>
+Uploaders: Alexey Bychko <alexey.bychko@percona.com>
+Build-Depends: debhelper, lsb-release
+Standards-Version: 3.9.2
+Homepage: https://www.percona.com/downloads/percona-release
+Vcs-Git: https://github.com/percona/percona-repositories.git
+
+Package: percona-release
+Architecture: all
+Pre-Depends: gpgv
+Depends: lsb-release, ${misc:Depends}
+Description: Package to install Percona gpg key and APT repos
